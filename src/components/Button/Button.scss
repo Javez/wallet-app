@@ -1,0 +1,54 @@
+@import "../../style/base/app-colors.scss";
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: $text-primary-color;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: $text-primary-color;
+}
+
+.inner-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0.2rem;
+  img {
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+.inner-children {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.under-text {
+  font-weight: 500;
+  padding: 0;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+}

@@ -1,0 +1,21 @@
+@import "../../style/base/app-colors.scss";
+@import "../../style/abstract/variables.scss";
+
+.daily-points-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  .dpb__title {
+    color: $text-primary-color;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+  }
+  .dpb__value {
+    font-family: $second-font-family;
+    color: $text-secondary-color;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+  }
+}

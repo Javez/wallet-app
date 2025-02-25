@@ -1,0 +1,125 @@
+{
+  "limit": 1500,
+  "transactions": [
+    {
+      "id": 1,
+      "type": "Payment",
+      "direction": "Incoming",
+      "amount": 14.06,
+      "name": "Payment",
+      "description": "Furniture purchase",
+      "datetime": "2025-01-18T14:30:00",
+      "status": "Pending",
+      "supplier": "Jp Morgan Bank",
+      "icon": "fa-shopping-cart"
+    },
+    {
+      "id": 2,
+      "type": "Payment",
+      "direction": "Outgoing",
+      "amount": 32.72,
+      "name": "Payment",
+      "description": "Coffee",
+      "datetime": "2025-01-21T08:15:00",
+      "status": "Approved",
+      "supplier": "Diana",
+      "icon": "fa-shopping-cart"
+    },
+    {
+      "id": 3,
+      "type": "Credit",
+      "direction": "Incoming",
+      "amount": 50.1,
+      "name": "Apple",
+      "description": "USB Wire",
+      "datetime": "2025-01-05T19:45:00",
+      "status": "Declined",
+      "supplier": "John",
+      "icon": "fa-screwdriver-wrench"
+    },
+    {
+      "id": 4,
+      "type": "Credit",
+      "direction": "Outgoing",
+      "amount": 10.2,
+      "name": "IKEA",
+      "description": "Coffee",
+      "datetime": "2025-01-09T22:00:00",
+      "status": "Approved",
+      "supplier": "",
+      "icon": "fa-coffee"
+    },
+    {
+      "id": 5,
+      "type": "Payment",
+      "direction": "Incoming",
+      "amount": 120.5,
+      "name": "Salary",
+      "description": "Monthly paycheck",
+      "datetime": "2025-01-30T10:00:00",
+      "status": "Approved",
+      "supplier": "Company Inc",
+      "icon": "fa-shopping-cart"
+    },
+    {
+      "id": 6,
+      "type": "Credit",
+      "direction": "Outgoing",
+      "amount": 15.75,
+      "name": "Grocery",
+      "description": "Supermarket shopping",
+      "datetime": "2025-01-15T12:20:00",
+      "status": "Pending",
+      "supplier": "SuperMart",
+      "icon": "fa-shopping-cart"
+    },
+    {
+      "id": 7,
+      "type": "Payment",
+      "direction": "Incoming",
+      "amount": 200.0,
+      "name": "Freelance",
+      "description": "Project payment",
+      "datetime": "2025-02-05T18:00:00",
+      "status": "Approved",
+      "supplier": "Freelance Client",
+      "icon": "fa-screwdriver-wrench"
+    },
+    {
+      "id": 8,
+      "type": "Credit",
+      "direction": "Outgoing",
+      "amount": 9.99,
+      "name": "Netflix",
+      "description": "Monthly subscription",
+      "datetime": "2025-02-01T21:15:00",
+      "status": "Approved",
+      "supplier": "Netflix",
+      "icon": "fa-coffee"
+    },
+    {
+      "id": 9,
+      "type": "Payment",
+      "direction": "Incoming",
+      "amount": 75.0,
+      "name": "Gift",
+      "description": "Birthday present",
+      "datetime": "2025-01-25T16:10:00",
+      "status": "Pending",
+      "supplier": "Friend",
+      "icon": "fa-shopping-cart"
+    },
+    {
+      "id": 10,
+      "type": "Credit",
+      "direction": "Outgoing",
+      "amount": 55.45,
+      "name": "Electric Bill",
+      "description": "Monthly electricity bill",
+      "datetime": "2025-02-10T23:45:00",
+      "status": "Declined",
+      "supplier": "Utility Company",
+      "icon": "fa-screwdriver-wrench"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+/* Ultra Small Devices */
+@media (max-width: 450px) {
+  .card-balance-block .cbb__available {
+    font-size: 1.35rem;
+    line-height: 1.35rem;
+  }
+}
+
+/* Extra Small Devices (Phones - Portrait) */
+@media (max-width: 480px) {
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small Devices (Phones - Landscape) */
+@media (min-width: 481px) and (max-width: 640px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium Devices (Tablets - Portrait) */
+@media (min-width: 641px) and (max-width: 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large Devices (Tablets - Landscape, Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra Large Devices (Desktops & Laptops) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Wide Screens (Large Desktops, Monitors) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+}
+
+/* Ultra-Wide Screens (4K Monitors, Large Displays) */
+@media (min-width: 1441px) {
+}
+
+/* Orientation: Portrait / Landscape */
+@media only screen and (orientation: landscape) {
+}
+
+/* High-DPI (Retina) Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+}

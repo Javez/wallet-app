@@ -1,0 +1,21 @@
+@import "../../../style/base/app-colors.scss";
+
+.transactions-list-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+  padding: 0 0 5rem;
+
+  .tlb-horisontal-line {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid $horisontal-line-color;
+    line-height: 0.1em;
+  }
+}

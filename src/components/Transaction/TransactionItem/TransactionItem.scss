@@ -1,0 +1,116 @@
+@import "../../../style/base/app-colors.scss";
+@import "../../../style/abstract/variables.scss";
+
+.transaction-item {
+  display: flex;
+  flex-direction: row;
+
+  .link.ti-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.8rem;
+    background-color: $components-bg-color;
+    .inner-children {
+      justify-content: space-between;
+      gap: 1rem;
+
+      .ti-img-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0 0.5rem;
+        .ti-img-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 1.5rem;
+          border-radius: 0.4rem;
+          .ti-img-wrapper__img {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+      .ti-content-block {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        flex: 1;
+        gap: 0.5rem;
+
+        &__upper {
+          display: flex;
+          justify-content: space-between;
+
+          .ti__upper-tz-name {
+            font-size: 1.7rem;
+            font-weight: 700;
+            line-height: 1.6rem;
+          }
+
+          .ti__upper-amount {
+            font-family: $second-font-family;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.6rem;
+          }
+        }
+
+        &__middle {
+          display: flex;
+          justify-content: space-between;
+          overflow: hidden;
+
+          .ti__middle-description {
+            font-family: $second-font-family;
+            color: $text-secondary-color;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: start;
+          }
+
+          .ti__middle-percent {
+            font-family: $second-font-family;
+            color: $text-secondary-color;
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.6rem;
+            background-color: $half-transp-component-bg-color;
+            border-radius: 0.4rem;
+            padding: 0 0.3rem 0;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+        }
+
+        &__bottom {
+          display: flex;
+          justify-content: space-between;
+          .ti__bottom-user {
+            color: $text-secondary-color;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.7rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: start;
+          }
+        }
+      }
+      .ti-icon-block {
+        .ti-icon-block__icon {
+          height: 1.8rem;
+          color: $fade-icon-color;
+        }
+      }
+    }
+  }
+}

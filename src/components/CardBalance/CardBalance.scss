@@ -1,0 +1,33 @@
+@import "../../style/base/app-colors.scss";
+@import "../../style/abstract/variables.scss";
+
+.card-balance-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  .cbb__title {
+    color: $text-primary-color;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+  }
+  .cbb__balance {
+    color: $text-primary-color;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+  }
+  .cbb__available {
+    font-family: $second-font-family;
+    color: $text-secondary-color;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: start;
+  }
+}

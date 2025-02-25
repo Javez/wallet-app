@@ -1,0 +1,22 @@
+@import "../../style/base/app-colors.scss";
+@import "../../style/abstract/variables.scss";
+
+.no-payment-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .npb__title {
+    color: $text-primary-color;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+  }
+  .npb__description {
+    font-family: $second-font-family;
+    color: $text-secondary-color;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+  }
+}

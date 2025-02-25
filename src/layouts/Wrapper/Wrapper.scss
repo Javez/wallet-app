@@ -1,0 +1,15 @@
+@import "../../style/base/app-colors.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: $main-bg-color;
+  overflow: hidden;
+  border: unset;
+  padding: 2rem 1rem 0;
+}

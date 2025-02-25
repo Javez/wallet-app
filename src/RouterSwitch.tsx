@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect, useState } from "react";
+import React, { ElementType, lazy, Suspense, useEffect, useState } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { ROUTES } from "./routes/routes";
@@ -7,8 +7,9 @@ import NotFound from "./pages/NotFound/NotFound";
 const TransactionDetail = lazy(
   () => import("./pages/TransactionDetail/TransactionDetail")
 );
+const AnimatePresenceFixedType = AnimatePresence as ElementType;
 
-export default function RouterSwitch() {
+export default function RouterSwitch(): JSX.Element {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -25,22 +26,17 @@ export default function RouterSwitch() {
   }, []);*/
 
   return (
-    <>
-      <AnimatePresence mode="wait" initial={false}>
-        <Suspense fallback={null}>
-          <Routes location={location} key={location.pathname}>
-            <Route
-              path={ROUTES.TRANSACTION_LIST}
-              element={<TransactionList />}
-            />
-            <Route
-              path={ROUTES.TRANSACTION_DETAIL}
-              element={<TransactionDetail />}
-            />
-            <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </AnimatePresence>
-    </>
+    <AnimatePresenceFixedType mode="wait" initial={false}>
+      <Suspense fallback={null}>
+        <Routes location={location} key={location.pathname}>
+          <Route path={ROUTES.TRANSACTION_LIST} element={<TransactionList />} />
+          <Route
+            path={ROUTES.TRANSACTION_DETAIL}
+            element={<TransactionDetail />}
+          />
+          <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
+        </Routes>
+      </Suspense>
+    </AnimatePresenceFixedType>
   );
 }
